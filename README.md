@@ -1,13 +1,14 @@
-## ConquerBlocks/modulo CSS/ proyecto entregable 4-5
+## ConquerBlocks/moduloCSS/Proyecto_entregable_4-5
 
 ### Personal Portfolio - Adam Keyes
 
-*Proyecto creado con vite y sass*
+Proyecto responsive (mobile first) creado con **HTML/CSS** usando **vite** y **sass**
 
 **Tamaños:** 
 
-1024px (desktop)
+425px (mobile-L)
 
 768px (tablet)
 
-425px (mobile)
+1024px (desktop/tablet-hor)
+
