@@ -1,0 +1,191 @@
+@use '../abstracts/' as abst;
+@use '../components/' as comps;
+
+header{
+    padding: 0px 20px;
+    @include abst.breakpoint('tablet') {
+        padding: 0px 32px;
+    }
+
+    @include abst.breakpoint('desktop') {
+        padding: 0px 82px;
+    }
+
+
+
+    div.header_main_container{
+        margin-top: 5px;
+        margin-bottom: 24px;
+        text-align: center;
+
+        @include abst.breakpoint('tablet') {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    
+        div.navbar{
+            margin-top: 20px;
+            z-index: 1;
+
+            @include abst.breakpoint('tablet') {
+                margin-top: 0px;
+            }
+    
+            nav{
+                display: flex;
+                gap: 25px;
+                justify-content: center;
+                align-items: center;
+
+                a:hover svg {
+                    fill: abst.$green;
+                }
+                
+            }
+        }
+        
+    }
+
+
+    div.header_image_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include abst.breakpoint('tablet') {
+            justify-content: right;
+            position: relative;
+            left: 32px;
+        }
+
+         @include abst.breakpoint('desktop'){
+            justify-content: right;
+            position: relative;
+            left: auto;
+            top: 40px;
+            
+         }
+
+        
+        picture{
+            @include abst.breakpoint('desktop'){
+                text-align: right;
+            }
+        }
+        img{
+            position: relative;
+            top: -108px;
+
+            @include abst.breakpoint('desktop'){
+                max-width: 74%;
+            }
+            
+            
+        }
+       
+    }
+
+    div.self_intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        position: relative;
+        top: -70px;
+
+        @include abst.breakpoint('tablet') {
+            max-width: 59%;
+            position: absolute;
+            top: 130px; 
+        }
+
+        @include abst.breakpoint('desktop') {
+         padding-top: 20px;
+        }
+
+        h1{
+            text-align: center;
+            font-family: "Space Grotesk";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px; /* 100% */
+            letter-spacing: -1.136px;
+            color: abst.$white;
+
+            @include abst.breakpoint('tablet') {
+                font-size: 72px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 72px; /* 100% */
+                letter-spacing: -2.045px; /* 116.7% */
+                text-align: left;
+                max-width: 100%;
+                font-family: "Space Grotesk";
+            }
+
+            @include abst.breakpoint('desktop') {
+               line-height: 22px;
+            }
+
+            span{
+                font-family: "Space Grotesk";
+                text-decoration: underline;
+                text-decoration-color: abst.$green;
+                text-underline-offset: 10px;
+                text-decoration-thickness: 4px;
+
+                @include abst.breakpoint('tablet') {
+                    text-underline-offset: 14px;
+                    text-decoration-thickness: 6px;
+                    font-family: "Space Grotesk";
+                    line-height: 120px; /* 100% */
+                }
+            }
+        }
+
+        p{
+            text-align: center;
+            font-family: "Space Grotesk";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 26px; /* 162.5% */
+            color: abst.$white;
+
+            @include abst.breakpoint('tablet') {
+                font-family: "Space Grotesk";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 28px; /* 155.556% */
+                text-align: left
+            }
+
+            @include abst.breakpoint('desktop'){
+                max-width: 70%;
+                position: relative;
+                left: calc(100% - 692px);
+            }
+        }
+
+        a{
+            @include comps.button_idle;
+            
+            @include abst.breakpoint('tablet') {
+                display: block;
+                position: relative;
+                left: calc(100% - 621px);
+            }
+
+            @include abst.breakpoint('desktop'){
+                position: relative;
+                left: calc(100% - 843px);
+            }
+            
+        }
+    }
+}

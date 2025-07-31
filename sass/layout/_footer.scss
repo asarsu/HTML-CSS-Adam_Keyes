@@ -1,0 +1,235 @@
+@use '../abstracts/' as abst;
+@use '../components/' as comps;
+
+footer{
+    background-color: abst.$gray;
+    background-image: url(../img/decoration/circles.svg);
+    background-repeat: no-repeat;
+    background-position: -317px 447px;
+    padding: 0px 20px;
+   
+    
+
+    @include abst.breakpoint('tablet') {
+        background-position: -350px 576px; 
+    }
+
+    @include abst.breakpoint('desktop') {
+        padding: 0px;
+
+         background-color: abst.$gray;
+                background-image: url(../img/decoration/circles.svg);
+                background-repeat: no-repeat;
+                background-position: -207px 290px;
+                padding: 0px 20px;
+    }
+    
+    div.contact_form_container{
+
+       @include abst.breakpoint('desktop') {
+           display: flex;
+           flex: 0.1;
+           margin: 0 82px;
+           justify-content: space-between;
+           gap: 10px;
+        }
+
+        div.contact{
+            padding-top: 60px;
+            padding-bottom: 50px;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+
+            @include abst.breakpoint('tablet') {
+            margin: 0 154px;
+            }
+
+            @include abst.breakpoint('desktop') {
+                margin: 0px;
+                flex: 1;  
+            }
+
+            h3{
+                text-align: center;
+                font-family: "Space Grotesk";
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 40px; /* 100% */
+                letter-spacing: -1.136px;
+                color: abst.$white;
+
+                @include abst.breakpoint('tablet') {
+                    
+                    font-size: 72px;
+                    line-height: 72px; /* 100% */
+                    letter-spacing: -2.045px;
+                }
+
+                @include abst.breakpoint('desktop') {
+                    text-align: left;
+                }
+            }
+            p{
+                text-align: center;
+                font-family: "Space Grotesk";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 26px; /* 162.5% */
+                color: abst.$white;
+
+                @include abst.breakpoint('tablet') {
+                    
+                    font-size: 18px;
+                    line-height: 28px; /* 100% */
+                    
+                }
+
+                @include abst.breakpoint('desktop') {
+                    text-align: left;
+                   
+                   
+                }
+            }
+        }
+
+        div.form_container{
+            border-bottom: 1px solid abst.$white;
+
+            @include abst.breakpoint('tablet') {
+            margin: 0 154px;
+            border-bottom: none;
+            }
+
+            @include abst.breakpoint('desktop') {
+                margin: 0px;
+                max-width: 47%;
+                flex: 1;
+                padding: 55px 0px 0px 60px;   
+            }
+
+            p{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 32px;
+                label{
+                    font-family: "Space Grotesk";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 26px; /* 162.5% */
+                    letter-spacing: -0.222px;
+                    text-transform: uppercase;
+                    color: abst.$white;
+                }
+
+                input {
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid abst.$white;
+                    color: abst.$white; // para que el texto del input también sea blanco
+                    padding: 8px 0; // opcional para espacio interior
+                    font-family: "Space Grotesk";
+                    font-size: 16px;
+                    outline: none;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    line-height: 26px; /* 162.5% */
+                    letter-spacing: -0.222px;
+                    padding-left: 20px;
+
+                    &:focus {
+                        border: none;
+                        border-bottom: 1px solid #4EE1A0;
+                    }
+                }
+
+                textarea {
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid abst.$white;
+                    color: abst.$white; // para que el texto del input también sea blanco
+                    padding: 8px 0; // opcional para espacio interior
+                    font-family: "Space Grotesk";
+                    font-size: 16px;
+                    outline: none;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    line-height: 26px; /* 162.5% */
+                    letter-spacing: -0.222px;
+                    padding-left: 20px;
+
+                    &:focus {
+                        border: none;
+                        border-bottom: 1px solid #4EE1A0;
+                    }
+                }
+            }
+
+            button{
+                display: flex;
+                justify-self: right;
+                @include comps.button_idle;
+                background: none;
+                border: none;
+                padding-bottom: 87px;
+                text-decoration: underline;
+                text-decoration-color: abst.$green;
+                text-underline-offset: 15px;
+                text-decoration-thickness: 2px;
+                    
+            }
+        }
+    }
+
+    div.footer_main_container{
+        margin-top: 39px;
+        text-align: center;
+
+        @include abst.breakpoint('tablet') {
+            border-top: 1px solid abst.$white;
+        }
+
+        @include abst.breakpoint('desktop') {
+                margin: 0 82px;
+            }
+
+        div.footer_nav_container{
+
+            @include abst.breakpoint('tablet') {
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                gap: 20px;
+                padding-top: 30px;
+            }
+
+            div.navbar{
+                padding-bottom: 80px;
+
+                @include abst.breakpoint('tablet') {
+                    margin-top: 0px;
+                    padding-bottom: 40px;
+                    
+                }
+
+                nav{
+                    display: flex;
+                    gap: 25px;
+                    justify-content: center;
+                    align-items: center;
+
+                    a:hover svg {
+                    fill: abst.$green;
+                }
+                }
+        }
+
+        
+    }   
+    }
+
+    
+}

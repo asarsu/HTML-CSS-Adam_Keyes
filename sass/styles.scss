@@ -1,0 +1,34 @@
+@use './abstracts';
+@forward './vendors/vendors';
+@use './base';
+@use './components';
+@use './layout';
+@use './pages';
+@use './themes';
+@use 'settings';
+
+ 
+
+
+
+body{
+    background-color: abstracts.$black;
+    background-image: url(../img/decoration/circles.svg), url(../img/decoration/oval.svg), url(../img/decoration/circles.svg), ;
+    background-repeat: no-repeat;
+    background-position: -317px 114px, calc(100% - -68px) 242px, calc(100% - -340px) 1245px;
+
+    @include abstracts.breakpoint('tablet') {
+        background-position: -266px 68px, calc(100% - -68px) 438px, calc(100% - -362px) 1064px;
+        
+    }
+
+     @include abstracts.breakpoint('desktop') {
+        background-position: -219px 68px, calc(100% - -130px) 438px, calc(100% - -362px) 842px;
+        
+    }
+     
+}
+
+
+    
+   
