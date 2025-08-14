@@ -13,3 +13,5 @@ Proyecto responsive (mobile first) creado con **HTML/CSS** usando **vite** y **s
 
 1024px (desktop/tablet-hor)
 
+1440px (desktop-L)
+
