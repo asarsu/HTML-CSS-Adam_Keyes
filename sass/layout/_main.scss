@@ -12,6 +12,10 @@ main{
         padding: 0px 82px;
     }
 
+    @include abst.breakpoint('desktop-xl') {
+        padding: 0px 150px;
+    }
+
     section.skills{
         border-top: 1px solid abst.$white;
         border-bottom: 1px solid abst.$white;
@@ -168,7 +172,13 @@ main{
                                     a{
                                         @include comps.button_idle
                                     }
-                                } 
+                                }
+
+                                @include abst.breakpoint(desktop-xl){
+                                    top:1149px;
+                                    left: 156px;
+                                    padding: 147px 202px;
+                                }
                             }
 
                             div.hover_container_learning{
@@ -192,7 +202,13 @@ main{
                                     a{
                                         @include comps.button_idle
                                     }
-                                } 
+                                }
+
+                                @include abst.breakpoint(desktop-xl){
+                                    top:1149px;
+                                    left: 743px;
+                                    padding: 147px 202px;
+                                }
                             }
 
                             div.hover_container_todo{
@@ -216,7 +232,13 @@ main{
                                     a{
                                         @include comps.button_idle
                                     }
-                                } 
+                                }
+
+                                @include abst.breakpoint(desktop-xl){
+                                    top:1688px;
+                                    left: 156px;
+                                    padding: 147px 202px;
+                                }
                             }
 
                             div.hover_container_entretainment{
@@ -240,7 +262,13 @@ main{
                                     a{
                                         @include comps.button_idle
                                     }
-                                } 
+                                }
+
+                                @include abst.breakpoint(desktop-xl){
+                                    top:1688px;
+                                    left: 743px;
+                                    padding: 147px 202px;
+                                }
                             }
 
                             div.hover_container_memory{
@@ -264,7 +292,13 @@ main{
                                     a{
                                         @include comps.button_idle
                                     }
-                                } 
+                                }
+
+                                @include abst.breakpoint(desktop-xl){
+                                    top: 2227px;
+                                    left: 156px;
+                                    padding: 147px 202px;
+                                }
                             }
 
                             div.hover_container_artgallery{
@@ -288,7 +322,13 @@ main{
                                     a{
                                         @include comps.button_idle
                                     }
-                                } 
+                                }
+
+                                @include abst.breakpoint(desktop-xl){
+                                    top: 2227px;
+                                    left: 743px;
+                                    padding: 147px 202px;
+                                }
                             }  
                         }
                     }         

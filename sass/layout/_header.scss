@@ -11,6 +11,12 @@ header{
         padding: 0px 82px;
     }
 
+    @include abst.breakpoint('desktop-xl') {
+        padding: 24px 150px;
+    }
+
+
+
 
 
     div.header_main_container{
@@ -23,8 +29,7 @@ header{
             justify-content: space-between;
             align-items: center;
         }
-
-    
+        
         div.navbar{
             margin-top: 20px;
             z-index: 1;
@@ -103,7 +108,12 @@ header{
         }
 
         @include abst.breakpoint('desktop') {
-         padding-top: 20px;
+            padding-top: 20px;
+        }
+
+        @include abst.breakpoint('desktop-xl') {
+            max-width: 47%;
+            padding-top: 120px;
         }
 
         h1{
@@ -170,6 +180,12 @@ header{
                 position: relative;
                 left: calc(100% - 692px);
             }
+
+            @include abst.breakpoint('desktop-xl'){
+                max-width: 70%;
+                position: relative;
+                left: calc(100% - 774px);
+            }
         }
 
         a{
@@ -184,6 +200,11 @@ header{
             @include abst.breakpoint('desktop'){
                 position: relative;
                 left: calc(100% - 843px);
+            }
+
+             @include abst.breakpoint('desktop-xl'){
+                position: relative;
+                left: calc(100% - 950px);
             }
             
         }

@@ -23,6 +23,16 @@ footer{
                 background-position: -207px 290px;
                 padding: 0px 20px;
     }
+
+    @include abst.breakpoint('desktop-xl') {
+        padding: 0px 150px;
+
+         background-color: abst.$gray;
+                background-image: url(../img/decoration/circles.svg);
+                background-repeat: no-repeat;
+                background-position: -207px 290px;
+                padding: 0px 20px;
+    }
     
     div.contact_form_container{
 
@@ -88,10 +98,14 @@ footer{
                 }
 
                 @include abst.breakpoint('desktop') {
-                    text-align: left;
-                   
-                   
+                    text-align: left;                     
                 }
+
+                 @include abst.breakpoint('desktop-xl') {
+                    max-width: 66%;                     
+                }
+
+
             }
         }
 

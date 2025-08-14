@@ -22,8 +22,13 @@ body{
         
     }
 
-     @include abstracts.breakpoint('desktop') {
+    @include abstracts.breakpoint('desktop') {
         background-position: -219px 68px, calc(100% - -130px) 438px, calc(100% - -362px) 842px;
+        
+    }
+
+    @include abstracts.breakpoint('desktop-xl') {
+        background-position: -219px 164px, calc(100% - -130px) 438px, calc(100% - -362px) 842px;
         
     }
      
